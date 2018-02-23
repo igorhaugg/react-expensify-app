@@ -12,3 +12,5 @@ adicionar o isProduction ....
 fazer webpack separar o css
 
 npm install --save extract-text-webpack-plugin
+
+adicionar link no index.html para o css
