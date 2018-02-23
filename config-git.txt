@@ -1,0 +1,40 @@
+no repositório
+
+git init
+git status
+git add .
+git commit -m "Initial commit"
+
+criar repositório no site do github
+
+usar git bash:
+
+ls -a ~/.ssh
+
+criar ssh
+
+ssh-keygen -t rsa -b 4096 -C "igor-haugg@hotmail.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_rsa
+
+clip < ~/.ssh/id_rsa.pub
+
+valor copiado:
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDTURJudrY0awh8jwFzEAWuMKER6QsTOJeTfBoCVOj0k0omk0Jni1MOT1q3lZ77pE4YXpn0jXcDy9o44kP3Zs9epOmDfotDb4USSV4tq1m0rH4+7tPGwJ7w2eDfwJ7SYRIImlwDP1kBK6Q4vysRXXSXdW2DBWKW1+o5V9m14TXD9+ZVDE0sJGmZXyW+bOpc/5ZUw/dk2RhYTpuxygkKhjC/8fq3pSeKHHSwHYxFGXB+vu8v7FdW7nlLqzIswnhqUFDNyg2qET4cIX7sDablkIhYn4Ho+nVuIedfxJq1A3PAdMniULLasa9R1AToULxB8GjpqJoHKRGS8sWqP8HTJoZljkPDqBZmG73sgbSH2buC7vo6iw8jAHnzPf7sm4po62lYR/3na+lxrU2KpxGEfs1MXO767bfC2OnyfOSrp9xNSdRCbhThr/QXli3bkr+pHC/NBdBvgIDoiX5/b4Qo5PtRhYFHiJ6O64gWN4QOyBv5n5TkYw9SW8wWHI8woHjUS36q+Kfhhm7QIBeuw3UBo1YR4EqFN6CC32Ad7eeAX2aRtJmljIotuBdCfIf2uyaFyWP6x5OsoCDH8OEV3B7y6mwCa3d1q9ROadaRSq3vHWLhVNmW87R9xl4dgJLtkMm1m7cTwUkDW/UwoqAK8X82fnnSUkhR0LKyS5CSFShFMhCwnQ== igor-haugg@hotmail.com
+
+no site do github colar em:
+
+settings -> SSH and GPG keys -> New SSH key
+
+colocar nome e colar no key
+
+rodar para testar:
+
+ssh -T git@github.com
+
+git remote add origin git@github.com:igorhaugg/react-expensify-app.git
+
+git push -u origin master  (o -u só na primeira vez)

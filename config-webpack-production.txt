@@ -1,0 +1,14 @@
+webpack.js.org/guides/production/
+
+modificar package.json
+
+"build:dev": "webpack",
+"build:prod": "webpack -p --env production",
+
+modificar webpack.config.js
+
+adicionar o isProduction ....
+
+fazer webpack separar o css
+
+npm install --save extract-text-webpack-plugin
