@@ -1,0 +1,24 @@
+npm install --save-dev jest
+
+mudar package json adicionar script
+
+criar pasta tests
+
+npm test
+
+cd C:\Projects\react-mead\expensify-app && npm test -- --watch
+
+npm install --save-dev react-test-renderer@16.0.0
+
+npm install --save-dev enzyme@3.0.0
+npm install --save-dev enzyme-adapter-react-16@1.0.0
+npm install --save-dev raf@3.3.2
+
+criar arquivos:
+
+setupTests e jest.config.json
+
+modificar o package.json para
+"test": "jest --config=jest.config.json"
+
+npm install --save-dev enzyme-to-json@3.0.1

@@ -1,0 +1,32 @@
+cd C:\Projects\react-mead\expensify-app && npm run dev-server
+
+instalar:
+
+npm install react-router-dom@4.2.2 --save
+
+modificar webpack config, para poder trabalhar com rotas
+
+devserver precisa sempre retornar index.html e o
+react vai decidir qual das rotas colocar nele
+
+historyApiFallback: true
+
+instalar redux
+
+npm install redux@3.7.2 --save
+
+instalar uuid
+
+npm install uuid --save
+
+instalar:
+
+npm install --save babel-plugin-transform-object-rest-spread
+
+npm install --save react-redux@5.0.5
+
+npm install --save moment
+
+npm install --save react-dates@12.7.0
+
+npm install --save react-addons-shallow-compare@15.6.0
