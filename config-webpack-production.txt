@@ -29,3 +29,23 @@ heroku create react-expensify-ih
 
 
 "start": "node server/server.js" em package json + outro script
+
+git push heroku master
+
+
+remover
+
+"scripts": {
+  "serve": "live-server public/",
+
+  modificar para agora rodar tudo e colocar os dados em dist
+
+  para testar
+
+  npm run dev-server
+
+  npm run build:prod
+
+  npm start
+
+  commit
