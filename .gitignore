@@ -1,1 +1,9 @@
 node_modules/
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
+config-git.txt
+config-test.txt
+config-webpack-production.txt
+config.txt

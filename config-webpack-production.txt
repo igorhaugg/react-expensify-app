@@ -14,3 +14,18 @@ fazer webpack separar o css
 npm install --save extract-text-webpack-plugin
 
 adicionar link no index.html para o css
+
+npm install --save express@4.15.4
+
+no terminal (rodar antes: npm run build:prod  pra gerar o bundle)
+
+node server/server.js
+
+install heroku cli
+
+heroku login
+
+heroku create react-expensify-ih
+
+
+"start": "node server/server.js" em package json + outro script
