@@ -3,4 +3,7 @@ public/dist/
 /config-git.txt
 /config-test.txt
 /config-webpack-production.txt
+/config-firebase.txt
 /config.txt
+/.env.test
+/.env.development
