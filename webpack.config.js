@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-// só para as merdas de testes
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 if (process.env.NODE_ENV === 'test') {
@@ -43,7 +42,15 @@ module.exports = env => {
                 options: {
                   sourceMap: true
                 }
-              }
+              },
+              'postcss-loader'
+              // I also used the code below and didn't work.
+              // {
+              //   loader: 'postcss-loader',
+              //   options: {
+              //     sourceMap: true
+              //   }
+              // }
             ]
           })
         }
@@ -51,7 +58,6 @@ module.exports = env => {
     },
     plugins: [
       CSSExtract,
-      // só por causa do teste
       new webpack.DefinePlugin({
         'process.env.FIREBASE_API_KEY': JSON.stringify(
           process.env.FIREBASE_API_KEY
